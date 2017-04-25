@@ -36,7 +36,23 @@ def selection_sort(lst):
     return lst
 
 
+def sum_rec(lst):
+    if len(lst) == 1:
+        return lst[0]
+    else:
+        return lst[-1] + sum_rec(lst[:-1])
+
+
+def max_element_rec(lst):
+    if len(lst) == 1:
+        return lst[0]
+    else:
+        min_index = 0 if lst[0] < lst[1] else 1
+        lst.pop(min_index)
+        return max_element_rec(lst)
+
+
 if __name__ == '__main__':
     # print binary_search(range(100), 99)
     # print bubble_sort([3,2,5,1,8,6,4,9,7])
-    print selection_sort([3,2,5,1,8,6,4,9,7])
+    print max_element_rec([3,2,5,1,8,6,4,9,7])
