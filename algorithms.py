@@ -1,3 +1,7 @@
+import random
+
+
+# Search algorithms
 def binary_search(lst, item):
     low = 0
     high = len(lst) - 1
@@ -13,6 +17,7 @@ def binary_search(lst, item):
     return None
 
 
+# Sort algorithms
 def bubble_sort(lst):
     length = len(lst)
     for i in range(length - 1):
@@ -36,6 +41,26 @@ def selection_sort(lst):
     return lst
 
 
+def quicksort(lst):
+    length = len(lst)
+    if length <= 1:
+        return lst
+    else:
+        less = []
+        greater = []
+        equal = []
+        pivot = lst[0]
+        for item in lst:
+            if item < pivot:
+                less.append(item)
+            elif item > pivot:
+                greater.append(item)
+            else:
+                equal.append(item)
+        return quicksort(less) + equal + quicksort(greater)
+
+
+# Others
 def sum_rec(lst):
     if len(lst) == 1:
         return lst[0]
@@ -54,5 +79,4 @@ def max_element_rec(lst):
 
 if __name__ == '__main__':
     # print binary_search(range(100), 99)
-    # print bubble_sort([3,2,5,1,8,6,4,9,7])
-    print max_element_rec([3,2,5,1,8,6,4,9,7])
+    print quicksort([3,2,5,1,8,6,8,4,9,0,7])
