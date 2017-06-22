@@ -60,7 +60,7 @@ def quicksort(lst):
         return quicksort(less) + equal + quicksort(greater)
 
 
-# Others
+# RECURSION
 def sum_rec(lst):
     if len(lst) == 1:
         return lst[0]
