@@ -41,6 +41,14 @@ def selection_sort(lst):
     return lst
 
 
+def insertion_sort(a):
+    for i in range(1, len(a)):
+        for j in range(i):
+            if a[j] > a[i]:
+                a[i], a[j] = a[j], a[i]
+    return a
+
+
 def quicksort(lst):
     length = len(lst)
     if length <= 1:
@@ -79,4 +87,4 @@ def max_element_rec(lst):
 
 if __name__ == '__main__':
     # print binary_search(range(100), 99)
-    print quicksort([3,2,5,1,8,6,8,4,9,0,7])
+    print insertion_sort([3,2,5,1,8,6,8,4,9,0,7])
