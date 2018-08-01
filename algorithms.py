@@ -121,4 +121,4 @@ if __name__ == '__main__':
     # print binary_search(range(100), 99)
     arr = [3,2,5,1,8,6,8,4,9,0,7]
     merge_sort(arr)
-    print arr
+    print(arr)
