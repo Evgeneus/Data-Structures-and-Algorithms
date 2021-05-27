@@ -27,18 +27,16 @@ def bubble_sort(lst):
     return lst
 
 
-def selection_sort(lst):
-    length = len(lst)
-    for i in range(length - 1):
-        ind_min = i
-        item_min = lst[ind_min]
-        for j in range(i+1, length):
-            if item_min > lst[j]:
-                ind_min = j
-        item_min = lst[ind_min]
-        lst[ind_min] = lst[i]
-        lst[i] = item_min
-    return lst
+
+def selection_sort(a):
+    n = len(a)
+    for i in range(n-1):
+        min_idx = i
+        for j in range(i+1, n):
+            if a[min_idx] > a[j]:
+                min_idx = j
+        a[i], a[min_idx] = a[min_idx], a[i]
+    return a
 
 
 def insertion_sort(a):

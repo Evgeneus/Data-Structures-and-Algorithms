@@ -3,7 +3,14 @@ This repository contains Python implementation of Data Structures, Algorithms an
 
 Most of the problems organized in files by topics. In notebooks one can find problems with Leetcode numbers and some useful links to solve the problem.
 
-- *CrackingTheCodinglnterview Problems.ipynb* contains solutions for the task from "Cracking The Coding lnterview".
-- *Data Structures.ipynb* contains implementation of common datastructures.
-- *Sorting-Algos* contains sorting algorithms
+- *CrackingTheCodinglnterview Problems.ipynb* - solutions for the task from "Cracking The Coding lnterview".
+- *Data Structures.ipynb* - implementation of common datastructures.
+- *Sorting-Algos.ipynb* - sorting algorithms, their pros and cons, useful resources:
+    1. Bubble Sort
+    2. Selection Sort
+    3. Insertion Sort
+    4. Quick Sort
+    5. Merge Sort
+    6. Merge Sort vs Quick Sort
+    
 
